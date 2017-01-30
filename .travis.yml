@@ -1,5 +1,5 @@
 language: java
 script:
-  - mvn install
+  - mvn install -DbuildNumber=$TRAVIS_BUILD_NUMBER
 jdk:
   - oraclejdk8
