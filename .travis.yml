@@ -1,5 +1,11 @@
 language: java
-script:
-  - mvn install -DbuildNumber=$TRAVIS_BUILD_NUMBER
 jdk:
   - oraclejdk8
+deploy:
+  provider: releases
+  api_key: $apiKey
+  file_glob: true
+  file: target/spring-ui.*.jar
+  skip_cleanup: true
+  on:
+    tags: true
