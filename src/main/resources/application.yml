@@ -1,0 +1,16 @@
+server:
+ port: 8761
+
+spring.boot.admin.context-path: /admin
+
+eureka:
+  enableSelfPreservation: true
+  client:
+    registryFetchIntervalSeconds: 5
+    registerWithEureka: false
+    fetchRegistry: false
+  server:
+    waitTimeInMsWhenSyncEmpty: 2
+    instanceEnabledOnit: true
+  instance:
+   preferIpAddress: true
