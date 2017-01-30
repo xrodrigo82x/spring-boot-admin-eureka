@@ -13,4 +13,4 @@ deploy:
   file: target/spring-ui.*.jar
   skip_cleanup: true
   on:
-    tags: false
+    tags: true
