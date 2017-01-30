@@ -1,4 +1,4 @@
-package poc;
+package springadmin;
 
 import de.codecentric.boot.admin.config.EnableAdminServer;
 import org.springframework.boot.SpringApplication;
