@@ -4,9 +4,7 @@ cache:
   - $HOME/.m2
 jdk:
   - oraclejdk8
-env:
-  global:
-    - buildNumber: $TRAVIS_BUILD_NUMBER
+script: mvn install -DbuildNumber=$TRAVIS_BUILD_NUMBER
 deploy:
   provider: releases
   api_key: $apiKey
