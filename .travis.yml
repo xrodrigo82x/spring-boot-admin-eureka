@@ -6,7 +6,7 @@ jdk:
   - oraclejdk8
 env:
   global:
-    - buildNumber: {{TRAVIS_BUILD_NUMBER}}
+    - buildNumber: $TRAVIS_BUILD_NUMBER
 deploy:
   provider: releases
   api_key: $apiKey
